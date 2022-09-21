@@ -1,3 +1,6 @@
+.container {
+    
+}
 
 /* Timeline defaults */
 /* --------------------------------------- */
@@ -39,6 +42,13 @@
     margin:0 40px;
     overflow:hidden;
 }
+
+ /*//////// IMAGE RESETS ///////*/
+ img, picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
 /* Timeline blur effect for start and end */
 /* --------------------------------------- */
@@ -243,7 +253,7 @@
 	padding: 2rem;
 	border: 1px solid #f7f7f7;
 	border-radius: 5px;
-	box-shadow: 0 0 50px 0 rgba(0,0,0,.1);
+	box-shadow: 0 0 50px 0 rgba(0,0,0,.02);
 }
 .h--timeline-event--selected{
     position:relative;
