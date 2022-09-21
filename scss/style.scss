@@ -1,5 +1,5 @@
-.container {
-    
+p {
+    margin-top: .25rem;
 }
 
 /* Timeline defaults */
@@ -285,8 +285,8 @@
 .h--timeline-event-date{
     display:block;
     font-style:italic;
-    margin:0.5rem auto;
-    margin:1rem auto;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 .h--timeline-event-date::before{
     content:'- ';
