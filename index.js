@@ -277,7 +277,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
 			translateTimeline(self, "next");
 			deaktivateNavigationButtons(self);
 		});
-		/*
 		//swipe on timeline
 		new SwipeContent(self.datesContainer);
 		self.datesContainer.addEventListener('swipeLeft', function(event){
@@ -286,7 +285,6 @@ Math.easeInOutQuad = function (t, b, c, d) {
 		self.datesContainer.addEventListener('swipeRight', function(event){
 			translateTimeline(self, 'prev');
 		}); 
-*/
 		//select a new event
 		for (var i = 0; i < self.date.length; i++) {
 			(function (i) {
@@ -502,7 +500,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 				new HorizontalTimeline(horizontalTimeline[i])
 			);
 		}
-		// navigate the timeline when inside the viewport using the keyboard
+		// navigate the timeline when inside the viewport using the keyboard. You can use the left and right arrows
 		document.addEventListener("keydown", function (event) {
 			if (
 				(event.keyCode && event.keyCode == 39) ||

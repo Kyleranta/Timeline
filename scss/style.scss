@@ -6,8 +6,9 @@ p {
 /* --------------------------------------- */
 .h--timeline-container *,
 .h--timeline-events *{
-  outline:0;
+  outline:none;
 }
+
 .h--timeline-container,
 .h--timeline-events{
     position:relative;
@@ -58,7 +59,7 @@ p {
     z-index:2;
     top:0;
     height:100%;
-    width:50px;
+    width:40px;
 }
 .h--timeline-dates::before{
     left:0;
@@ -198,6 +199,7 @@ p {
     width:16px;
     top:50%;
     left:50%;
+    /* These are the navigationarrow */
     -webkit-transform:translateX(-50%) translateY(-50%);
     -ms-transform:translateX(-50%) translateY(-50%);
     transform:translateX(-50%) translateY(-50%);
@@ -250,10 +252,9 @@ p {
 .h--timeline-event-content{
     max-width:800px;
     margin:2rem auto 0;
-	padding: 2rem;
-	border: 1px solid #f7f7f7;
+	padding: .5rem;
+	border: 1px solid #fff;
 	border-radius: 5px;
-	box-shadow: 0 0 50px 0 rgba(0,0,0,.02);
 }
 .h--timeline-event--selected{
     position:relative;
@@ -289,7 +290,7 @@ p {
     margin-bottom: 0;
 }
 .h--timeline-event-date::before{
-    content:'- ';
+    content:'';
 }
 @-webkit-keyframes cd-enter-right{
     0%{
