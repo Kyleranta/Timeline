@@ -277,6 +277,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 			translateTimeline(self, "next");
 			deaktivateNavigationButtons(self);
 		});
+		/*
 		//swipe on timeline
 		new SwipeContent(self.datesContainer);
 		self.datesContainer.addEventListener('swipeLeft', function(event){
@@ -285,6 +286,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 		self.datesContainer.addEventListener('swipeRight', function(event){
 			translateTimeline(self, 'prev');
 		}); 
+*/
 		//select a new event
 		for (var i = 0; i < self.date.length; i++) {
 			(function (i) {
